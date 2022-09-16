@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fa-trash {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f014";
+}
+.fa-edit {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f044";
+}
+.fa-save {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f0c7";
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.holder{
+    background: linear-gradient(to top, rgb(0, 0, 44) 99%, #ff7b00 1%);
+    padding: 15px 25px;
+    height: 80vh;
+    width: 50%;
+    border-radius: 10px;
+    overflow: auto;
+}
+.taskInput{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid orangered;
+}
+.taskBtn{
+    padding: 10px;
+    background-image: linear-gradient(red, #ff7b00); 
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+.taskBtn:hover{
+    background-image: linear-gradient(rgb(221, 4, 4), #c45f00); 
+    cursor: pointer;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: white;
+    margin: 10px 0;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.content{
+    width: 100%;
+}
+.taskOutput{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.edit{
+    background-color: rgb(3, 114, 148);
+    padding: 10px 13px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    
+}
+.save{
+    background-color: rgb(8, 148, 3);
+    padding: 10px 13px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.save:hover{
+    background-color: rgb(4, 82, 1);
+}
+.delete{
+    background-color: red;
+    padding: 10px 13px;
+    color: white;
+    cursor: pointer;
+}
+.edit:hover{
+    background-color: rgb(1, 89, 116);
+}
+.delete:hover{
+    background-color: rgb(199, 3, 3);
+}
+.actions{
+    display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+    .holder{
+    width: 90%;
+    }
+}
