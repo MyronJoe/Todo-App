@@ -5,36 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="task.css">
-    <script src="https://use.fontawesome.com/9ab64435ec.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>JavaScript-ToDO-App</title>
+    <style>
+        .timer{
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="holder">
-            <h1>Todo List</h1>
-            <form action="" class="form" id="form">
-                <input type="text" class="taskInput" name="content" placeholder="Create Your Task">
+            <div class="fixed">
 
-
-                <input type="submit" class="taskBtn" value="Add Task">
-            </form>
-            <h1>Our Tasks</h1>
+                <div class="top">
+                    <h1>Todo List</h1>
+    
+                    <div class="top-timer">
+                        <span id="hour"></span>
+                        <span>:</span>
+                        <span id="min"></span>
+                        <span>:</span>
+                        <span id="sec"></span>
+                        <span>:</span>
+                        <span id="daynight"></span>
+                    </div>
+                </div>
+    
+                <form action="" class="form" id="form">
+                    <input type="text" class="taskInput" name="content" placeholder="Create Your Task">
+    
+                    <input type="submit" class="taskBtn" value="Add Task">
+                </form>
+                <h1>Our Tasks</h1>
+                
+            </div>
             <div class="tasks" id="tasks">
                 
-                <!-- <div class="task"> 
+                <!-- <div class="timer">
+                    <span style="color:white;">Date Posted :</span>
+                    <span style="color:white;">2022</span>
+                    <span style="color:white;">:</span>
+                    <span style="color:white;">11</span>
+                    <span style="color:white;">:</span>
+                    <span style="color:white;">09</span>
+                </div>
+                
+                <div class="task"> 
 
                     <div class="content">
                         <input type="text" class="taskOutput" value="Our Task" readonly>
                     </div>
+
                     <div class="actions">
-                        <span class="fa fa-edit edit"></span>
-                        <span class="fa fa-trash delete"></span>
+                        <span class="edit"><span class="fa fa-edit"></span></span>
+                        <span class="delete"><span class="fa fa-trash"></span></span>
                     </div>
 
                 </div> -->
+
             </div>
         </div>
-    </div>
-    <script src="todolist.js"></script>
+
+    <script src="todo2.js"></script>
 </body>
 </html>
