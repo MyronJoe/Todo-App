@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS';
 }
-
+.timer{
+    color: white;
+}
 .container{
     width: 100%;
     height: 100vh;
